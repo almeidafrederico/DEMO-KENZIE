@@ -5,3 +5,9 @@ function soma(a, b) {
 let result = soma(2, 4);
 
 console.log(result);
+
+function digaOla(){
+    alert("Olá");
+}
+
+digaOla();
