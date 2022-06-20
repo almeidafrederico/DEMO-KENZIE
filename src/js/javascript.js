@@ -101,3 +101,59 @@ function convert(value, convertType, currentType){
 }
 
 console.log(convert(18, 'Celsius', 'Celsius'));
+
+//S4-06 | 💪 Atividades - Funções: 🗒️Lista de Exercícios no Codewars
+
+//🧠 Exercício 1 - Are You Playing Banjo?
+
+function areYouPlayingBanjo(name) {
+    if(name[0]=="R" || name[0]=="r"){
+      let text = " plays banjo"
+      return name + text;
+    }else{
+      let text = " does not play banjo"
+      return name + text;
+    }
+    
+  }
+  
+  console.log(areYouPlayingBanjo("Rodrigo"));
+
+  //🧠 Exercício 2 - BASIC: Making Six Toast.
+
+  function sixToast(num) {
+    if(num<=6){
+      return 6-num
+    }else{
+      return num-6
+    }
+  }
+  
+  console.log(sixToast(16))
+  
+  //🧠 Exercício 3 - How old will I be in 2099?
+
+  function  calculateAge(anoNascimento, anoAtual) {
+    if(anoNascimento<anoAtual){
+      let idade = anoAtual - anoNascimento
+      if(idade>1){
+        return `You are ${idade} years old.`
+      }else{
+        return `You are ${idade} year old.`
+      }
+  
+    }else if(anoNascimento>anoAtual){
+      let nascimento = anoNascimento - anoAtual
+      if(nascimento>1){
+        return `You will be born in ${nascimento} years.`
+      }else{
+        return `You will be born in ${nascimento} years.`
+      }
+  
+    }else{
+      return "You were born this very year!"
+    }
+  }
+
+  console.log(calculateAge(2012, 2016))
+  
